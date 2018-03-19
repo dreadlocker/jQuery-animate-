@@ -1,1 +1,1 @@
-# Animation using jQuery 
+# Responsive animation using jQuery
