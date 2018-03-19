@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div style="text-align:center">
+        <button id="btn1">Animate BG Flag</button>
+    </div>
+    <div id="box1" style="background:white;"></div>
+    <div id="box2" style="background:#98bf21;"></div>
+    <div id="box3" style="background:red;"></div>
+
+    <style>
+        #box1,
+        #box2,
+        #box3 {
+            background: red;
+            height: 100px;
+            width: 99%;
+            margin: 6px;
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#box1").animate({
+                    width: "toggle"
+                }, 1000);
+                $("#box2").animate({
+                    width: "toggle"
+                }, 1000);
+                $("#box3").animate({
+                    width: "toggle"
+                }, 1000);
+
+            });
+        });
+    </script>
+</body>
+
+</html>
