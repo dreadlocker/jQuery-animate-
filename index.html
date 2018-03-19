@@ -7,20 +7,36 @@
 
 <body>
     <div style="text-align:center">
+        <button id="btn2">Move the square</button>
+    </div>
+    <div id="box4" style="background:#2180bf;"></div>
+
+    <div style="text-align:center">
         <button id="btn1">Animate BG Flag</button>
     </div>
     <div id="box1" style="background:white;"></div>
     <div id="box2" style="background:#98bf21;"></div>
     <div id="box3" style="background:red;"></div>
-
     <style>
+        body {
+            margin: 1%;
+            padding: 0;
+        }
+
         #box1,
         #box2,
         #box3 {
-            padding-top: 15%;
+            padding-top: 10%;
             margin-right: 10%;
             width: 99%;
-            margin: 6px;
+            margin: 1%;
+            border: 1px solid black;
+        }
+
+        #box4 {
+            width: 10%;
+            padding-top: 10%;
+            margin: 1%;
             border: 1px solid black;
         }
     </style>
@@ -38,8 +54,43 @@
                     width: "toggle"
                 }, 1200);
             });
+
+            $("#btn2").click(function () {
+                $("#box4").animate({
+                    marginLeft: '20%',
+                }, 1000);
+                $("#box4").animate({
+                    marginTop: '20%',
+                }, 1000);
+                $("#box4").animate({
+                    marginLeft: '1%',
+                }, 1000);
+                $("#box4").animate({
+                    marginTop: '1%',
+                }, 1000);
+            });
         });
     </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<style>
+</style>
+
+<script>
+    $(document).ready(function () {
+
+    });
+</script>
 </body>
 
 </html>
